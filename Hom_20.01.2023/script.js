@@ -37,7 +37,7 @@
 
 //9
 // let number = prompt("Введіть трьохзначне число", ' ');
-// alert(`Ваше число ${number % 10}${Math.round(number / 10) % 10}${Math.round(number / 100) % 10}.`);
+// alert(`Ваше число ${number % 10}${Math.round(number / 10) % 10}${((Math.round(number / 10) % 100) - (Math.round(number / 10) % 10)) / 10}.`);
 
 //10
 // let integerNumber = prompt("Введіт ціле число", ' ');
