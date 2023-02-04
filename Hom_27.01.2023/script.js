@@ -164,51 +164,51 @@
 // за ней дату. Учтите возможность перехода на следующий
 // месяц, год, а также високосный год. 
 
-let day = parseInt(prompt("Enter day", ' '));
-let month = parseInt(prompt("Enter month", ' '));
-let year = parseInt(prompt("Enter year", ' '));
-let correctEntering = false;
-switch (month){
-    case 1:
-    case 3:
-    case 5:
-    case 7:
-    case 8:
-    case 10:
-    case 12:
-        if(day <=31)
-        correctEntering = true; break;
-    case 4:
-    case 6:
-    case 9:
-    case 11:
-        if(day <=30)
-        correctEntering = true; break;
-    case 2:
-        if ((day <= 29 && year % 4 == 0) || (day <= 28 && year % 4 != 0))
-        correctEntering = true; break;
-    default:break;
-}
-if(correctEntering === false)
-    document.write("Error");
-if (day == 31 && month == 12){
-    day = 1;
-    month = 1;
-    year++;
-}
-else if ((day == 31 && (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12))
-|| (day == 30 && (month == 4 || month == 6 || month == 9 || month == 11))
-|| (month == 2 && (day == 28 || day == 29))){
-    month++;
-    day = 1;
-}
-else{
-    day++;
-}
-if(day <= 9){
-    day = 0 + day.toString();
-}
-if(month <= 9){
-    month = 0 + month.toString();
-}
-document.write(`${day}.${month}.${year}`);
+// let day = parseInt(prompt("Enter day", ' '));
+// let month = parseInt(prompt("Enter month", ' '));
+// let year = parseInt(prompt("Enter year", ' '));
+// let correctEntering = false;
+// switch (month){
+//     case 1:
+//     case 3:
+//     case 5:
+//     case 7:
+//     case 8:
+//     case 10:
+//     case 12:
+//         if(day <=31)
+//         correctEntering = true; break;
+//     case 4:
+//     case 6:
+//     case 9:
+//     case 11:
+//         if(day <=30)
+//         correctEntering = true; break;
+//     case 2:
+//         if ((day <= 29 && year % 4 == 0) || (day <= 28 && year % 4 != 0))
+//         correctEntering = true; break;
+//     default:break;
+// }
+// if(correctEntering === false)
+//     document.write("Error");
+// if (day == 31 && month == 12){
+//     day = 1;
+//     month = 1;
+//     year++;
+// }
+// else if ((day == 31 && (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12))
+// || (day == 30 && (month == 4 || month == 6 || month == 9 || month == 11))
+// || (month == 2 && (day == 28 || day == 29))){
+//     month++;
+//     day = 1;
+// }
+// else{
+//     day++;
+// }
+// if(day <= 9){
+//     day = 0 + day.toString();
+// }
+// if(month <= 9){
+//     month = 0 + month.toString();
+// }
+// document.write(`${day}.${month}.${year}`);
